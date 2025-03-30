@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+</head>
+<style>
+    #principal {
+        
+        border: 1px solid red;
+        width: 920px;
+        margin: 0 auto;
+        background-color: orange;
+    }
+
+    #principal::after {
+      content: "";
+      clear: both;
+      display: table;
+      border: 2px solid blue;
+    }
+
+    .noticia {
+        background-color: #e5e5e5;
+        padding: 5px;
+        width: 280px;
+        margin: 7px;
+        float: left;
+    }
+
+    #rodape {
+        width: 920px;
+        margin: 0 auto;
+        background-color: gray;
+        color: white;
+        text-align: center;
+    }
+
+/*     #conteudo {
+        width: 600px;
+        float: left;
+    }
+
+    #lateral {
+        width: 300px;
+        float: right;
+    }
+
+    .item-galeria {
+        border: 1px solid gray;
+        padding: 0.5em;
+        background-color: white;
+        width: 200px;
+        float: right;
+    } */
+
+    
+</style>
+
+<body>
+
+    <div id="principal">
+        <!-- 
+        <img class="item-galeria" src="img/celular1.png" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ut vero quam! Repellat, voluptas nemo unde exercitationem magni laboriosam architecto eius rerum soluta asperiores veniam hic dolorum provident incidunt optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, architecto dicta. Voluptatum ipsum voluptatibus aliquam maiores ut debitis eaque, repellendus soluta architecto necessitatibus vitae odit, cumque eveniet iure praesentium? Veritatis?</p>
+        <p class="limpar">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam eius placeat fugit temporibus officiis assumenda magnam possimus optio velit nesciunt, maiores delectus pariatur libero ducimus quam accusamus a voluptatum?</p> -->
+
+
+        <div class="noticia">
+            <h3>Loren 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum nesciunt ut corporis hic, illo
+                necessitatibus eligendi expedita eaque possimus repudiandae quia unde laboriosam ab quos sed pariatur in
+                quas.</p>
+        </div>
+
+        <div class="noticia">
+            <h3>Loren 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum nesciunt ut corporis hic, illo
+                necessitatibus eligendi expedita eaque possimus repudiandae quia unde laboriosam ab quos sed pariatur in
+                quas.</p>
+        </div>
+
+        <div class="noticia">
+            <h3>Loren 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum nesciunt ut corporis hic, illo
+                necessitatibus eligendi expedita eaque possimus repudiandae quia unde laboriosam ab quos sed pariatur in
+                quas.</p>
+        </div>
+
+    </div>
+    
+    <div id="rodape">
+        <h3>Todos direitos reservados</h3>
+    </div>
+
+
+
+</body>
+
+</html>
