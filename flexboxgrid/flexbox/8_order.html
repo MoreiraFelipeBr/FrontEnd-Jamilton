@@ -13,7 +13,6 @@
         }
         .container-flex {
             /* width: 250px; */
-            height: 200px;
             border: 4px solid red; 
             display: flex;
             flex-direction: row;
@@ -25,26 +24,23 @@
             color: white;
             padding: 4px;
             margin: 4px;
-            border: 4px solid white;    
-            flex-basis: 80px;
+            border: 4px solid white; 
+            flex-grow: 1;   
         }
         .coluna {
+            height: 400px;
             flex-direction: column;
         }
 
-        .item1,  .item3 {
-            flex-grow: 1;
+        .item1 {
+            order: 1;
         }
 
-        .item2{
-            flex-grow: 2;
+        .item4 {
+            order: -1;
         }
 
 
-        .containerimg {
-            
-            margin: 50px auto;
-        }
 
     </style>
 </head>
@@ -53,11 +49,11 @@
    
    <h2>Row</h2>
    <div class="container-flex">
-        <div class="item1">Item teste 01</div>
-        <div class="item2">Item teste 02</div>
-        <div class="item3">Item teste 03</div>
-        <!-- <div>04</div>
-        <div>05</div>
+        <div class="item1">01</div>
+        <div class="item2">02</div>
+        <div class="item3">03</div>
+        <div class="item4">04</div>
+        <!-- <div>05</div>
         <div>06</div>
         <div>07</div>
         <div>08</div>
@@ -67,11 +63,11 @@
 
    <h2>Column</h2>
    <div class="container-flex coluna">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <!-- <div>04</div>
-        <div>05</div>
+        <div class="item1">01</div>
+        <div class="item2">02</div>
+        <div class="item3">03</div>
+        <div class="item4">04</div>
+        <!-- <div>05</div>
         <div>06</div>
         <div>07</div>
         <div>08</div>
@@ -85,10 +81,10 @@
    <br />
    <br />
 
-   <div class="containerimg">
-    <img src="/flexboxgrid/anotações aula/8.png" alt="" style="width: 100%;max-width: max-content; height: auto;">
+   <div style="margin: 50px auto;">
+    <img src="/flexboxgrid/anotações aula/11.png" alt="" style="width: 100%;max-width: max-content; height: auto;">
     <!-- <img src="/flexboxgrid/anotações aula/7.png" alt=""> -->
-    </div>
+   </div>
    
 </body>
 </html>
